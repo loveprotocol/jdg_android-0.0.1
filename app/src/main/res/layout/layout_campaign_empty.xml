@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_campaign_empty_cl"
+    android:visibility="visible"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/layout_campaign_empty_img"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:tint="@color/rsbColorThumbPressed"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_plum_logo_color" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:id="@+id/layout_campaign_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/layout_campaign_empty_noCampTv" />
+
+</LinearLayout>

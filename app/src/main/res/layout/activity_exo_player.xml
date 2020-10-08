@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imhc2.plumboard.mvvm.view.activity.ExoPlayerActivity"
+    android:background="@android:color/black">
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/activity_exo_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:show_timeout="2000"
+        app:resize_mode="fixed_width" />
+</android.support.constraint.ConstraintLayout>

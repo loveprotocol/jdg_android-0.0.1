@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvvm.view.activity.auth.AuthFindIdDoneActivity"
+    android:background="@color/colorPlumBoard">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_auth_find_id_done_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarStyle" />
+
+    <TextView
+        android:id="@+id/activity_auth_find_id_done_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="인증 정보와 일치하는 계정은 \n다음과 같습니다"
+        android:textColor="@color/colorPlumBoardSub"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_auth_find_id_done_btn"
+        app:layout_constraintTop_toBottomOf="@+id/activity_auth_find_id_done_toolbar" />
+
+    <Button
+        android:id="@+id/activity_auth_find_id_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/drawable_btn_outline"
+        android:drawableLeft="@drawable/drawable_ic_person"
+        android:drawablePadding="-30dp"
+        android:paddingLeft="12dp"
+        android:text="aaa@aaa.com"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPlumBoardSub"
+        app:layout_constraintTop_toBottomOf="@+id/activity_auth_find_id_done_title" />
+
+</android.support.constraint.ConstraintLayout>

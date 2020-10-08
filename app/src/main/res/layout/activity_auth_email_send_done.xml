@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPlumBoard">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sendDoneToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarStyle" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_auth_email_send_done_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendDoneToolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/emailSendDoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/activity_auth_email_send_done_title"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/linkCheckTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/activity_auth_email_send_done_subTitle"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailSendDoneTv" />
+
+        <Button
+            android:id="@+id/emailResend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:drawableLeft="@drawable/drawable_ic_email_white"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="12dp"
+            android:text="@string/activity_auth_email_send_done_emailResendBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/linkCheckTv" />
+
+        <Button
+            android:id="@+id/emailSendDoneStartApp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:drawableLeft="@drawable/drawable_ic_email_open"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="12dp"
+            android:text="@string/activity_auth_email_send_done_startEmailAppBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            app:layout_constraintTop_toBottomOf="@+id/emailResend" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/postBoxImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
+        android:contentDescription="이미지"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_postbox_white" />
+</android.support.constraint.ConstraintLayout>

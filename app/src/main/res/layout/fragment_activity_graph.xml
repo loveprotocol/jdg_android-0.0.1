@@ -1,0 +1,281 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.activityfragments.ActivityGraphFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_activity_graph_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="215dp" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/fragment_activity_graph_indicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:piv_radius="4dp"
+            app:piv_selectedColor="@color/colorPlumBoard"
+            app:piv_unselectedColor="#42000000"
+            app:piv_viewPager="@id/fragment_activity_graph_viewpager" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="#c9c9c9" />
+
+        <LinearLayout
+            android:id="@+id/fragment_activity_graph_boost_ll"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/fragment_activity_graph_boost_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/fragment_activity_graph_boostTv"
+                    android:textColor="@color/colorPlumBoard"
+                    android:textSize="18sp"
+                    android:textStyle=""
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/fragment_activity_graph_boost_img_ll"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_activity_graph_boost_img_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingStart="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_boost_tv"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/fragment_activity_graph_boost_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/ic_simple_arrow_right_color" />
+                </LinearLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <ProgressBar
+                android:id="@+id/fragment_activity_graph_boost_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progressDrawable="@drawable/drawable_graph_progress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E3141"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:text="@string/fragment_activity_graph_thisWeekTv"
+                android:textColor="@color/colorPlumBoardSub" />
+
+            <!--<com.github.mikephil.charting.charts.BarChart-->
+            <!--android:id="@+id/fragment_activity_barchart"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="144dp" />-->
+            <lecho.lib.hellocharts.view.ColumnChartView
+                android:id="@+id/fragment_activity_columnChartView"
+                android:layout_width="match_parent"
+                android:layout_height="144dp" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:background="#2E3141">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment_activity_graph_guideLine_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="37dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment_activity_graph_guideLine_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="217dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment_activity_graph_guideLine_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="99dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment_activity_graph_guideLine_h2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="31dp" />
+
+            <ImageView
+                android:id="@+id/fragment_activity_graph_avg_point_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@+id/fragment_activity_graph_guideLine_v1"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h1"
+                app:srcCompat="@drawable/ic_graph_point" />
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_avg_point_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="200"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_avg_point_img"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h1" />
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_avg_point_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_activity_graph_totalPointTv"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/fragment_activity_graph_avg_point_tv"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_activity_graph_avg_point_tv" />
+
+            <ImageView
+                android:id="@+id/fragment_activity_graph_campaign_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@+id/fragment_activity_graph_guideLine_v1"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h2"
+                app:srcCompat="@drawable/ic_graph_campaign_done" />
+
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_campaign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="0"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_campaign_img"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h2" />
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_campaign_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_activity_graph_doneCampaignTv"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/fragment_activity_graph_campaign_tv"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_activity_graph_campaign_tv" />
+
+            <ImageView
+                android:id="@+id/fragment_activity_graph_avg_rating_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@+id/fragment_activity_graph_guideLine_v2"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h1"
+                app:srcCompat="@drawable/ic_graph_avg_rating" />
+
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_avg_rating_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="0.0"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_avg_rating_img"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h1" />
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_avg_rating_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/fragment_activity_graph_totalAvgTv"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_avg_rating_img"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_activity_graph_avg_rating_tv" />
+
+            <ImageView
+                android:id="@+id/fragment_activity_graph_time"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="@+id/fragment_activity_graph_guideLine_v2"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h2"
+                app:srcCompat="@drawable/ic_graph_time" />
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="0:00"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_time"
+                app:layout_constraintTop_toTopOf="@+id/fragment_activity_graph_guideLine_h2" />
+
+            <TextView
+                android:id="@+id/fragment_activity_graph_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/fragment_activity_graph_totalUseTimeTv"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/fragment_activity_graph_time"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_activity_graph_time_tv" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

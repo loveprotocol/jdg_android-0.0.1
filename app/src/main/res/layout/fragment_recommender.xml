@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.bottomsheets.RecommenderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_recommender_codeTv"
+            android:textColor="#000000" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fragment_recommender_tll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/fragment_recommender_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/recommend_digits"
+            android:inputType="text"
+            android:hint="@string/fragment_recommender_recoHintEt" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<EditText-->
+            <!--android:id="@+id/fragment_recommender_et"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:hint="추천인 코드를 입력해주세요" />-->
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_recommender_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPlumBoardSub"
+        android:text="@string/fragment_recommender_inputBtn"
+        android:background="#9E9E9E"/>
+</LinearLayout>

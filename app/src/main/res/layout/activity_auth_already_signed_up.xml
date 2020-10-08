@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPlumBoard"
+    tools:context="com.imhc2.plumboard.mvvm.view.activity.auth.AuthAlreadySignedUpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/authAlreadyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarStyle" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authAlreadyToolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/authAlreadyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="@string/activity_auth_already_signed_up_title"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/authAlreadySubTitle"
+            app:layout_constraintStart_toStartOf="@+id/authAlreadySubTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/authAlreadySubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_auth_already_signed_up_subTitle"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/authAlreadyLoginBtn"
+            app:layout_constraintTop_toBottomOf="@+id/authAlreadyTitle" />
+
+        <Button
+            android:id="@+id/authAlreadyLoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:drawableLeft="@drawable/drawable_ic_person"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="12dp"
+            android:text="@string/activity_auth_already_signed_up_loginBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/authAlreadySendBtn"
+            app:layout_constraintTop_toBottomOf="@+id/authAlreadySubTitle" />
+
+        <Button
+            android:id="@+id/authAlreadySendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:drawableLeft="@drawable/drawable_ic_email_white"
+            android:drawablePadding="-30dp"
+            android:paddingLeft="12dp"
+            android:text="@string/activity_auth_already_signed_up_pwResendEmailBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/authAlreadyLoginBtn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

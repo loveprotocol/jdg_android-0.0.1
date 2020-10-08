@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCardBackgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/fragment_type_la_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/ic_type_la" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_type_la_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2sp"
+                    android:textColor="@color/colorPlumBoardSub"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fragment_type_la_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="2sp"
+                    android:textColor="@color/colorPlumBoardSub"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.imhc2.plumboard.commons.util.CustomImageView169
+            android:id="@+id/fragment_type_la_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp" />
+
+        <FrameLayout
+            android:id="@+id/fragment_type_la_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/fragment_type_la_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/drawable_edittext_box"
+                android:gravity="top|start"
+                android:hint="@string/layout_type_la_answerHintEt"
+                android:minHeight="312dp"
+                android:padding="24dp"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textColorHint="#42FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fragment_type_la_text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#42FFFFFF"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,79 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPlumBoardSub"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.activityfragments.ActivityPointManageFragment">
+
+    <LinearLayout
+        android:id="@+id/fragment_activity_point_manage_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_activity_point_manage_viewpager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <TextView
+            android:id="@+id/fragment_activity_point_manage_money_draw_tv"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/colorPlumBoardSub"
+            android:drawableRight="@drawable/ic_arrow_right_gray"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_activity_point_manage_withdrawalTv" />
+
+        <TextView
+            android:id="@+id/fragment_activity_point_manage_use_store_tv"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/colorPlumBoardSub"
+            android:drawableRight="@drawable/ic_arrow_right_gray"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_activity_point_manage_allianceTv" />
+
+        <TextView
+            android:id="@+id/fragment_activity_point_manage_money_draw_state_tv"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/colorPlumBoardSub"
+            android:drawableRight="@drawable/ic_arrow_right_gray"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_activity_point_manage_ReceivingStatusTv" />
+    </LinearLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_activity_point_manage_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_activity_point_manage_ll" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/fragment_activity_point_manage_indicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:piv_radius="4dp"
+        app:piv_selectedColor="@color/colorPlumBoard"
+        app:piv_unselectedColor="#42000000"
+        app:piv_viewPager="@id/fragment_activity_graph_viewpager" />
+</android.support.constraint.ConstraintLayout>

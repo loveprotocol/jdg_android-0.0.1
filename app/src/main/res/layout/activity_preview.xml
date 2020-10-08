@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvvm.view.activity.mypage.PreviewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_preview_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_preview_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarStyle" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_preview_rv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_preview_appBarLayout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_preview_empty_cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/activity_preview_appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_marginTop="184dp"
+                android:id="@+id/activity_preview_empty_img"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:tint="@color/rsbColorThumbPressed"
+                app:srcCompat="@drawable/ic_plum_logo_color" />
+
+            <TextView
+                android:id="@+id/fragment_home_empty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="불러올 수 있는 미리보기 캠페인\n정보가 존재하지 않습니다"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

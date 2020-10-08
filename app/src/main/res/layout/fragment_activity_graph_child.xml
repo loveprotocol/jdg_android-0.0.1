@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.activityfragments.ActivityGraphChildFragment">
+
+    <TextView
+        android:id="@+id/fragment_activity_graph_child_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="오늘" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/fragment_activity_graph_child_progress_in"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                app:cpb_background_progressbar_color="#9E9E9E"
+                app:cpb_progressbar_color="#00BCD4"
+                app:cpb_progressbar_width="7dp"
+                app:cpb_background_progressbar_width="7dp"
+                app:cpb_progress_max="100"
+                app:cpb_progress="0"
+                android:layout_gravity="center"/>
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/fragment_activity_graph_child_progress_out"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cpb_background_progressbar_color="#8BC34A"
+                app:cpb_progressbar_color="@color/colorPlumBoard"
+                app:cpb_progressbar_width="7dp"
+                app:cpb_background_progressbar_width="7dp"
+                app:cpb_progress_max="100"
+                app:cpb_progress="100"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="@string/fragment_activity_graph_child_pointTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fragment_activity_graph_child_progress_img1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="#00BCD4"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="적립"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="50dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_activity_graph_child_progress_save_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <ImageView
+                    android:id="@+id/fragment_activity_graph_child_progress_img2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="#8BC34A"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/fragment_activity_graph_child_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추가"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="50dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_activity_graph_child_progress_plus_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fragment_activity_graph_child_progress_img3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@color/colorPlumBoard"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/fragment_activity_graph_child_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="합계"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="50dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_activity_graph_child_progress_total_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

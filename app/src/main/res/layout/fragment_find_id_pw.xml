@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.bottomsheets.FindIdPwFragment">
+
+
+    <TextView
+        android:id="@+id/fragment_find_id_pw_findIdTv"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:text="@string/fragment_find_id_pw_findIdTv"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingStart="24dp"/>
+
+    <TextView
+        android:id="@+id/fragment_find_id_pw_findPwTv"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:text="@string/fragment_find_id_pw_findPwTv"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingStart="24dp"/>
+
+</LinearLayout>

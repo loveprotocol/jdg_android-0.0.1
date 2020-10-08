@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.imhc2.plumboard"
+    android:versionCode="1"
+    android:versionName="0.0.1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.imhc2.plumboard.PlumBoardApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.imhc2.plumboard.mvvm.view.activity.MainActivity">
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="plumboard.io"
+                    android:scheme="https" />
+                <data
+                    android:host="plumboard.io"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.SplashActivity"
+            android:label="플럼보드"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.imhc2.plumboard.mvvm.view.activity.CampaignDetailActivity" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.activitypoint.WithDrawMoneyActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.CardMainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.ExoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthMainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.ProfileMainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthEmailSendDoneActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthEmailSignInActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthEmailSignUpActivity"
+
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthFindIdActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthPwSignUpActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthAlreadySignedUpActivity"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="59a9496fd34385ea4a5091fb984ec644f5e7bb9b" />
+
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.activitypoint.PointStateActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.MyProfileActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.CertificationActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.PlumBoostActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.NoticeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.FaqActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.AlarmActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.GuideActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.SettingActivity"
+            android:launchMode="singleTask" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.RecommenderActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.StampActivity"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_plum_logo_color" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPlumBoard" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="test" />
+
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.CardHistoryActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.HomeDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.activitypoint.PointStateDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.NoticeDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.FaqDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.CardFinishActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.AuthActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.LocationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.LegalNoticeActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.PreviewActivity" />
+        <activity android:name="com.imhc2.plumboard.mvvm.view.activity.auth.AuthFindIdDoneActivity" />
+        <activity android:name="com.imhc2.plumboard.mvvm.view.activity.mypage.LegalsWebViewActivity"/>
+    </application>
+
+</manifest>

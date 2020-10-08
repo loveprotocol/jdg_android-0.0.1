@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:opacity="opaque"><!--불투명-->
+    <item android:drawable="@color/colorPlumBoard" />
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/ic_plum_logo_white"
+        android:width="48dp"
+        android:height="48dp"
+        tools:targetApi="m" />
+</layer-list>

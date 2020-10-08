@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.activityfragments.ActivityCampaignHistoryFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_activity_campaign_history_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_activity_campaign_history_empty_cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fragment_activity_campaign_history_empty_img"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="136dp"
+                android:tint="@color/rsbColorThumbPressed"
+                app:srcCompat="@drawable/ic_plum_logo_color" />
+
+            <TextView
+                android:id="@+id/fragment_home_empty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="현재 참가한 캠페인 기록이\n 존재하지 않습니다"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

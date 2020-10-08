@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_recommend_sheet_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="24dp"
+        android:background="@color/colorPlumBoard">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPlumBoardSub"
+            android:text="@string/fragment_recommender_share_myCodeTv" />
+
+        <TextView
+            android:id="@+id/fragment_recommender_share_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPlumBoardSub" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_recommender_share_copyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:text="@string/fragment_recommender_share_copyTv" />
+
+    <TextView
+        android:id="@+id/fragment_recommender_share_shareBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:text="@string/fragment_recommender_share_shareTv" />
+
+</LinearLayout>

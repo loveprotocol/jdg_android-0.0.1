@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPlumBoard">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_auth_email_sign_in_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.02"
+            android:text="@string/activity_auth_email_sign_in_title"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_auth_email_sign_in_toolbar"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/authEmailSignInCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginText"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="5dp"
+                android:letterSpacing="0.02"
+                android:text="@string/activity_auth_email_sign_in_emailAddressTv"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/emailTIL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="30dp"
+                app:hintEnabled="false"
+                app:layout_constraintBottom_toTopOf="@+id/pwText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailText">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPlumBoardSub"
+                    android:hint="@string/activity_auth_email_sign_in_emailAddressHintEt"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:textColor="@color/colorPlumBoardSub"
+                    android:textColorHint="@color/colorEditTextHint"
+                    android:theme="@style/AuthEtStyle" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pwTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="25dp"
+                app:hintEnabled="false"
+                app:layout_constraintBottom_toTopOf="@+id/activity_auth_email_sign_in_findIdPwTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pwText">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/pwEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPlumBoardSub"
+                    android:digits="@string/pw_digits"
+                    android:hint="@string/activity_auth_email_sign_in_pwHintEt"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:textColor="@color/colorPlumBoardSub"
+                    android:textColorHint="@color/colorEditTextHint"
+                    android:theme="@style/AuthEtStyle" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/pwText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_auth_email_sign_in_passwordTv"
+                android:textColor="@color/colorPlumBoardSub"
+                app:layout_constraintBottom_toTopOf="@+id/pwTIL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailTIL" />
+
+            <TextView
+                android:id="@+id/activity_auth_email_sign_in_findIdPwTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/activity_auth_email_sign_in_forgetPwTv"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pwTIL" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/emailSignInFloatingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="@color/colorPlumBoardSub"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right_color" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

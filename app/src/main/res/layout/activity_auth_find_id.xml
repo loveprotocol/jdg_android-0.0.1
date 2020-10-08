@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPlumBoard">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_auth_find_id_toolbar"
+        android:theme="@style/ToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activity_auth_find_id_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/activity_auth_find_id_title"
+        android:textColor="@color/colorPlumBoardSub"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_auth_find_id_btn"
+        app:layout_constraintTop_toBottomOf="@+id/activity_auth_find_id_toolbar" />
+
+    <Button
+        android:id="@+id/activity_auth_find_id_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/drawable_btn_outline"
+        android:drawableLeft="@drawable/drawable_ic_phone"
+        android:drawablePadding="-30dp"
+        android:paddingLeft="12dp"
+        android:text="@string/activity_auth_find_id_phoneAuthBtn"
+        android:textColor="@color/colorPlumBoardSub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_auth_find_id_toolbar_title" />
+</android.support.constraint.ConstraintLayout>

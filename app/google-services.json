@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "1001431118630",
+    "firebase_url": "https://plumboard-aacb2.firebaseio.com",
+    "project_id": "plumboard-aacb2",
+    "storage_bucket": "plumboard-aacb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001431118630:android:2eef25880a4c7289",
+        "android_client_info": {
+          "package_name": "com.imhc.plumboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001431118630-h30s248rh96t14oc5rb3q4lvc96ijbh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imhc.plumboard",
+            "certificate_hash": "b488d8a5b1786a5ec35573d68a238e8483d25f54"
+          }
+        },
+        {
+          "client_id": "1001431118630-5i74aidgm9imkpc7id3uoja5cg7bf7ej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imhc.plumboard",
+            "certificate_hash": "c815cc3fe60326380231831540ae89c77e86495f"
+          }
+        },
+        {
+          "client_id": "1001431118630-kl21650925bm5asnu8doe59voii7etfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-p3bfl8tXK1ChQfPNQrLfV_Qi3xGECOI"
+        },
+        {
+          "current_key": "AIzaSyDAhnqs6IyJE3w9cKQD_epm3E03-nbrVwc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001431118630-kl21650925bm5asnu8doe59voii7etfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001431118630:android:c9f4ffbf15412ef9",
+        "android_client_info": {
+          "package_name": "com.thomas.tutorialdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001431118630-ttcieij9h199uihka9vgdkro951g90sa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thomas.tutorialdata",
+            "certificate_hash": "c815cc3fe60326380231831540ae89c77e86495f"
+          }
+        },
+        {
+          "client_id": "1001431118630-kl21650925bm5asnu8doe59voii7etfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-p3bfl8tXK1ChQfPNQrLfV_Qi3xGECOI"
+        },
+        {
+          "current_key": "AIzaSyDAhnqs6IyJE3w9cKQD_epm3E03-nbrVwc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001431118630-kl21650925bm5asnu8doe59voii7etfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

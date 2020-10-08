@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPlumBoard</item>
+        <item name="colorPrimaryDark">@color/colorPlumBoard</item>
+        <item name="colorAccent">@color/colorPlumBoard</item>
+        <!--<item name="android:alertDialogTheme">@style/alertDialogStyle</item>-->
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+
+        <item name="android:textColorTertiary">@android:color/black</item><!--전체 기본색 변경-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="CardMainToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/colorPlumBoardSub</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@drawable/drawable_splash</item>
+    </style>
+    
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorPlumBoard</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+    <style name="WithDrawMoneyEtStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/colorWithDrawMoneyEt</item>
+    </style>
+
+    <style name="AuthEtStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/colorPlumBoardSub</item>
+    </style>
+
+    <style name="ProgressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/colorPlumBoardSub</item> <!--백그라운드 설정 (투명)-->
+        <item name="android:windowIsTranslucent">true</item><!-- 투명-->
+        <item name="android:backgroundDimEnabled">false</item><!-- 뒤의 배경이 반투명-->
+    </style>
+
+    <style name="alertDialogStyle" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/colorPlumBoard</item>
+        <item name="android:textColorPrimary">@android:color/holo_red_dark</item><!--content 색깔-->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

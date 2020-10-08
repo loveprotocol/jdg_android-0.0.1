@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/layout_align_popular_btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPlumBoardSub"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/fragment_align_BasicAlignTv"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/layout_align_new_btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPlumBoardSub"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/fragment_align_newTv"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/layout_align_rating_btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPlumBoardSub"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/fragment_align_highRatingTv"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/layout_align_point_btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPlumBoardSub"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/fragment_align_highPointTv"
+        android:textSize="14sp" />
+</LinearLayout>

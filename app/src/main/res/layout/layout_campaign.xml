@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.imhc2.plumboard.commons.util.CustomImageView169
+                android:id="@+id/layout_campaign_main_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/drawable_campaign_gradient"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/layout_campaign_kind_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_margin="24dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|top"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginStart="21dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <com.willy.ratingbar.BaseRatingBar
+                    android:id="@+id/layout_campaign_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_clickable="false"
+                    app:srb_drawableEmpty="@drawable/ic_plum_star_outline"
+                    app:srb_drawableFilled="@drawable/ic_plum_star_color"
+                    app:srb_scrollable="false"
+                    app:srb_starHeight="15dp"
+                    app:srb_starPadding="3dp"
+                    app:srb_starWidth="15dp"
+                    app:srb_stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/layout_campaign_rating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:text="4.7 (509)"
+                    android:textColor="@color/colorPlumBoardSub"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_campaign_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:textColor="@color/colorPlumBoardSub" />
+        </FrameLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_campaign_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/layout_campaign_moneyIcon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_plum_logo_color" />
+
+                <TextView
+                    android:id="@+id/layout_campaign_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="500"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_campaign_moneyIcon"
+                    app:layout_constraintLeft_toRightOf="@+id/layout_campaign_moneyIcon"
+                    app:layout_constraintTop_toTopOf="@+id/layout_campaign_moneyIcon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/layout_campaign_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="안드로이드와 ios 관련 설문"
+                    app:layout_constraintStart_toStartOf="@+id/layout_campaign_ll"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_campaign_ll" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/layout_campaign_company_img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

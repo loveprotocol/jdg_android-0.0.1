@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPlumBoard">#3f51b5</color>
+    <color name="colorPlumBoardSub">#ffffff</color>
+    <color name="colorEditTextHint">#99ffffff</color>
+    <color name="colorPlumBoardBlack">#16171F</color>
+    <color name="colorCardBackgroundColor">#2E3141</color>
+    <color name="colorWithDrawMoneyEt">#9E9E9E</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorPointStateError">#EF6C00</color>
+    <color name="colorPointStateSuccess">#3F51B5</color>
+    <color name="colorPointStateAccept">#4CAF50</color>
+    <color name="colorPointStateCancel">#9E9E9E</color>
+
+
+    <color name="colorChildGraphSave">#00BCD4</color>
+    <color name="colorChildGraphPlus">#8BC34A</color>
+    <color name="colorChildGraphUse">#9E9E9E</color>
+
+
+    <integer-array name="material_colors">
+        <item>@color/colorPlumBoard</item>
+    </integer-array>
+</resources>

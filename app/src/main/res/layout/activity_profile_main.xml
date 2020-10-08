@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imhc2.plumboard.mvvm.view.activity.ProfileMainActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_profile_main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPlumBoard">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_profile_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/drawable_profile_round_border"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/activity_profile_main_my_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_profile_main_my_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPlumBoardSub" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_profile_main_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/activity_profile_main_frame_layout" />
+
+</android.support.constraint.ConstraintLayout>

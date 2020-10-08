@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.imhc2.plumboard.mvvm.view.fragment.CampaignMainFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fragment_campaign_main_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_indicator_color" />
+
+    <FrameLayout
+        android:id="@+id/fragment_campaign_main_Fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fragment_campaign_main_empty_cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/fragment_campaign_main_empty_img"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:tint="@color/rsbColorThumbPressed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_plum_logo_color" />
+
+            <TextView
+                android:id="@+id/fragment_campaign_main_empty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/layout_campaign_empty_noCampTv"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_campaign_main_empty_img" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.cjj.MaterialRefreshLayout
+            android:id="@+id/fragment_campaign_main_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:overlay="true"
+            app:progress_colors="@array/material_colors"
+            app:progress_show_arrow="false"
+            app:progress_size_type="normal"
+            app:wave_color="@color/transparent"
+            app:wave_height_type="normal"
+            app:wave_show="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_campaign_main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--<include-->
+            <!--android:id="@+id/fragment_campaign_main_emptyView"-->
+            <!--layout="@layout/layout_campaign_empty"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="gone" />-->
+        </com.cjj.MaterialRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            android:stateListAnimator="@null">
+
+            <Button
+                android:id="@+id/fragment_campaign_main_filter_btn"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="@drawable/drawable_filter_btn_left"
+                android:drawableStart="@drawable/drawable_ic_campaign_filter"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="@string/fragment_campaign_main_filterBtn"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/fragment_campaign_main_align_btn"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="@drawable/drawable_filter_btn_right"
+                android:drawableStart="@drawable/drawable_ic_campaign_align"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="@string/fragment_campaign_main_alignBtn"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

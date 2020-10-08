@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/card_main_activity_toolbar_history"
+        android:title="콘텐츠 목록"
+        android:enabled="true"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/card_main_activity_toolbar_detail_info"
+        android:icon="@drawable/ic_wave_color"
+        android:title="캠페인 상세 정보"
+        android:enabled="true"
+        app:showAsAction="never"/>
+</menu>

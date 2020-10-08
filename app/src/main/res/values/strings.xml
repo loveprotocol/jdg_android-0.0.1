@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">PlumBoard</string>
+    <!--<string name="com.crashlytics.useFirebaseAppId">true</string>-->
+
+    <!--keys-->
+    <string name="vimeo_token">cffbb78296f2476a83a410475a8673c7</string>
+    <string name="iamportAPiKey">6157171386886058</string>
+    <string name="iamportAPiSecretKey">CYsibtQPDpBO8J71qWS70pVQZWAR9riMpL4BeUrRk2FtMNucJmjKMfALcaDmCW82HcEV75Mr7sUTfp6Z</string>
+    <string name="recaptchaKey">6Lego3UUAAAAAJin276lIFsmN5xyms4iTFYwxl36</string>
+
+    <!--address-->
+    <string name="dynamic_link">https://imhc.page.link/email</string>
+    <string name="dynamic_link_share">https://imhc.page.link/share</string>
+    <string name="AuthAddress">file:///android_asset/auth.html</string>
+    <string name="LocationAddress"><!--http://61.42.20.174:8080/htmlTest/Android.html-->
+        https://plumboard-aacb2.firebaseapp.com/address</string>
+    <string name="storage_address">gs://plumboard-aacb2.appspot.com</string>
+    <string name="vimeoAddress">https://api.vimeo.com</string>
+    <string name="privacyPolicy">http://www.plumboard.io/privacypolicy</string>
+    <string name="termsService">http://www.plumboard.io/blank-2</string>
+    
+    <!--digits-->
+    <string name="pw_digits">1234567890abcdefghijklnmopqrstuvwxyz</string>
+    <string name="recommend_digits">qwertyuioplkjhgfdsazxcvbnm1234567890QWERTYUIOPLKJHGFDSAZXCVBNM</string>
+
+    <!--in xml-->
+    <string name="activity_auth_already_signed_up_title">이미 가입된 \n이메일 계정입니다</string>
+    <string name="activity_auth_already_signed_up_subTitle">해당 계정으로 로그인 하기 위한 \n방법을 선택해주세요</string>
+    <string name="activity_auth_already_signed_up_loginBtn">로그인하기</string>
+    <string name="activity_auth_already_signed_up_pwResendEmailBtn">비밀번호 재설정 이메일 전송</string>
+    <string name="activity_auth_email_send_done_title">인증 메일이 \n전송되었습니다</string>
+    <string name="activity_auth_email_send_done_subTitle">이메일에 첨부된 링크를 확인해주세요</string>
+    <string name="activity_auth_email_send_done_emailResendBtn">인증메일 재전송</string>
+    <string name="activity_auth_email_send_done_startEmailAppBtn">이메일 앱 실행하기</string>
+    <string name="activity_auth_email_sign_in_title">로그인</string>
+    <string name="activity_auth_email_sign_in_emailAddressTv">이메일 주소</string>
+    <string name="activity_auth_email_sign_in_emailAddressHintEt">이메일 주소를 입력해주세요</string>
+    <string name="activity_auth_email_sign_in_passwordTv">비밀번호</string>
+    <string name="activity_auth_email_sign_in_pwHintEt">비밀번호를 입력해주세요</string>
+    <string name="activity_auth_email_sign_in_forgetPwTv">계정 또는 비밀번호를 잊으셨나요?</string>
+    <string name="activity_auth_email_sign_up_title">사용하실 이메일 주소를\n입력해주세요</string>
+    <string name="activity_auth_email_sign_up_emailAddressTv">이메일주소</string>
+    <string name="activity_auth_email_sign_up_emailAddressHintEt">이메일 주소를 입력하세요</string>
+    <string name="activity_auth_email_sign_up_subTitle">입력하신 계정으로  비밀번호 재설정 링크를 보내드립니다</string>
+    <string name="activity_auth_find_id_title">계정을 찾기 위해 휴대폰 \n본인 인증을 진행해 주세요</string>
+    <string name="activity_auth_find_id_phoneAuthBtn">휴대폰 본인 인증</string>
+    <string name="activity_auth_main_title">플럼보드에 오신 것을 \n환영합니다!</string>
+    <string name="activity_auth_main_googleBtn">G-MAIL로 시작하기</string>
+    <string name="activity_auth_main_emailBtn">이메일로 로그인하기</string>
+    <string name="activity_auth_main_emailSignUpBtn">이메일로 회원가입하기</string>
+    <string name="activity_auth_main_legalTv">회원가입 또는 로그인 시 플럼보드의 개인정보처리방침 및 서비스 이용약관에 동의하는 것으로 간주합니다.</string>
+    <string name="activity_auth_main_showLegalTv"><u>약관 보기</u></string>
+    <string name="activity_auth_main_privacyPolicyTv"><u>개인정보 처리방침</u></string>
+    <string name="activity_auth_main_lostIdTv"><u>계정 분실</u></string>
+    <string name="activity_auth_pw_sign_up_title">계정의 비밀번호를\n설정해주세요</string>
+    <string name="activity_auth_pw_sign_up_subTitle">숫자, 영문조합 6자리 이상</string>
+    <string name="activity_auth_pw_sign_up_pwTv">비밀번호</string>
+    <string name="activity_auth_pw_sign_up_pwHintEt"><![CDATA[숫자&영문 조합 6자리 이상]]></string>
+    <string name="activity_auth_pw_sign_up_pwCheckTv">비밀번호 확인</string>
+    <string name="activity_auth_pw_sign_up_pwCheckHintEt">비밀번호 재입력</string>
+    <string name="activity_campaign_detail_collection_itemsTv">수집 항목</string>
+    <string name="activity_campaign_detail_introduceTv">소개</string>
+    <string name="activity_campaign_detail_kind">유형</string>
+    <string name="activity_campaign_detail_pointTv">지급 포인트</string>
+    <string name="activity_campaign_detail_rating">평점</string>
+    <string name="activity_campaign_detail_joinBtn">참가하기</string>
+    <string name="activity_card_finish_titleTv">캠페인 완료!</string>
+    <string name="activity_card_finish_campaignPointTv">캠페인 완료 보상</string>
+    <string name="activity_card_finish_myPointTv">현재 보유 포인트</string>
+    <string name="activity_certification_myAuthTv">본인인증</string>
+    <string name="activity_certification_location">지역</string>
+    <string name="activity_legal_notice_termsConditions">이용약관</string>
+    <string name="activity_legal_notice_privacyPolicy">개인정보 처리방침</string>
+    <string name="activity_legal_notice_openLicenses">오픈소스 라이센스</string>
+    <string name="activity_my_profile_nickName">닉네임</string>
+    <string name="activity_plum_boost_recommendCodeTv">추천 코드</string>
+    <string name="activity_plum_boost_stampTv">캠페인 스탬프</string>
+    <string name="activity_point_state_detail_stateTv">상태</string>
+    <string name="activity_point_state_detail_applyTv">신청일시</string>
+    <string name="activity_point_state_detail_processTv">처리일시</string>
+    <string name="activity_point_state_detail_bankTv">은행</string>
+    <string name="activity_point_state_detail_bankNameTv">예금주</string>
+    <string name="activity_point_state_detail_bankNumTv">계좌번호</string>
+    <string name="activity_point_state_detail_pointTv">금액</string>
+    <string name="activity_point_state_detail_errorTv">오류 사유</string>
+    <string name="activity_recommender_codeInputTv">추천인 코드 입력</string>
+    <string name="activity_recommender_codeShare">내 추천 코드 공유</string>
+    <string name="activity_setting_pushTv">푸시 알림</string>
+    <string name="activity_setting_pwReSettingTv">비밀번호 재설정</string>
+    <string name="activity_setting_logoutTv">로그아웃</string>
+    <string name="activity_setting_idDusabledTv">계정 비활성화</string>
+    <string name="activity_stamp_campStampTv">활성화</string>
+    <string name="activity_with_draw_money_bankTv">은행</string>
+    <string name="activity_with_draw_money_bankNameTv">예금주</string>
+    <string name="activity_with_draw_money_bankNumTv">계좌번호</string>
+    <string name="activity_with_draw_money_pointTv">금액</string>
+    <string name="activity_with_draw_money_withdrawalBtn">출금 신청하기</string>
+    <string name="activity_with_draw_money_bankHintEt">은행을 선택해주세요</string>
+    <string name="activity_with_draw_money_bankNameHintEt">계좌의 예금주명을 입력해주세요</string>
+    <string name="activity_with_draw_money_bankNumHintEt">계좌번호를 입력해주세요</string>
+    <string name="activity_with_draw_money_pointHintEt">금액을 입력해주세요</string>
+    <string name="fragment_activity_graph_boostTv">플럼부스트</string>
+    <string name="fragment_activity_graph_thisWeekTv">이번주</string>
+    <string name="fragment_activity_graph_doneCampaignTv">완료한 캠페인</string>
+    <string name="fragment_activity_graph_totalUseTimeTv">총 소요 시간(분)</string>
+    <string name="fragment_activity_graph_totalPointTv">총 획득 포인트</string>
+    <string name="fragment_activity_graph_totalAvgTv">평균 평점</string>
+    <string name="fragment_activity_graph_child_pointTv">포인트</string>
+    <string name="fragment_activity_point_manage_withdrawalTv">출금 신청</string>
+    <string name="fragment_activity_point_manage_allianceTv">제휴점 사용</string>
+    <string name="fragment_activity_point_manage_ReceivingStatusTv">접수 및 처리 현황</string>
+    <string name="fragment_align_BasicAlignTv">기본 정렬 (인기도 순)</string>
+    <string name="fragment_align_newTv">최신 순</string>
+    <string name="fragment_align_highRatingTv">평점 높은 순</string>
+    <string name="fragment_align_highPointTv">포인트 높은 순</string>
+    <string name="fragment_campaign_main_filterBtn">필터</string>
+    <string name="fragment_campaign_main_alignBtn">정렬</string>
+    <string name="fragment_filter_pointRangeTv">포인트범위</string>
+    <string name="fragment_filter_onlyPointAlignTv">*포인트 범위 설정 시 포인트 순 정렬만 가능합니다</string>
+    <string name="fragment_filter_filterBtn">필터 설정하기</string>
+    <string name="fragment_find_id_pw_findIdTv">아이디 찾기</string>
+    <string name="fragment_find_id_pw_findPwTv">비밀번호 찾기</string>
+    <string name="fragment_home_title">다양한 평가에 참여해 주세요</string>
+    <string name="fragment_home_popularTv">인기 캠페인</string>
+    <string name="fragment_home_moreTv">더 보기</string>
+    <string name="fragment_profile_takePicktureTv">사진 찍기</string>
+    <string name="fragment_profile_ChoiceGalleryTv">갤러리에서 선택하기</string>
+    <string name="fragment_profile_basicImageTv">기본 이미지로 변경</string>
+    <string name="fragment_recommender_codeTv">추천인 코드</string>
+    <string name="fragment_recommender_recoHintEt">추천인 코드를 입력해주세요</string>
+    <string name="fragment_recommender_inputBtn">입력하기</string>
+    <string name="fragment_recommender_share_myCodeTv">내 추천인 코드 :</string>
+    <string name="fragment_recommender_share_copyTv">복사하기</string>
+    <string name="fragment_recommender_share_shareTv">공유하기</string>
+    <string name="layout_campaign_empty_noCampTv">현재 참가할 수 있는\n캠페인이 존재하지 않습니다</string>
+    <string name="layout_type_la_answerHintEt">답변을 입력해주세요</string>
+    <string name="layout_type_rating_totalTimeTv">총 소요시간</string>
+    <string name="layout_type_rating_pointTv">지급 포인트</string>
+    <string name="layout_type_sa_answerHintEt">답변을 입력해주세요</string>
+    <string name="layout_type_video_rating_subtitle">5점 만점 기준으로 심사평을 남겨주세요</string>
+    <string name="layout_type_video_rating_title">시청하신 광고 영상을  심사해주세요</string>
+
+    <!--dialog-->
+    <string name="dialog_positive_check">확인</string>
+    <string name="dialog_negative_cancel">취소</string>
+    <string name="dialog_title_cancel">접수를 취소하시겠습니까?</string>
+    <string name="dialog_title_resend">인증 메일이 재전송되었습니다</string>
+    <string name="dialog_title_progressCancel">현재까지의 모든 진행상황을 취소\n 하시겠습니까?</string>
+    <string name="dialog_title_pwReSetting">비밀번호 재설정</string>
+    <string name="dialog_title_pwResend">확인을 누르시면 비밀번호 재설정 링크를 계정의 이메일 주소로 보내드립니다</string>
+    <string name="dialog_title_logout">로그아웃 하시겠습니까?</string>
+    <string name="dialog_title_needLogin">회원가입이 필요합니다.\n로그인페이지로 이동하시겠습니까?</string>
+    <string name="dialog_title_campaignJoinFail">캠페인 참가에 실패했습니다</string>
+    <string name="dialog_title_campaignCancel">캠페인 진행을 취소하시겠습니까?</string>
+    <string name="dialog_title_quality">품질</string>
+    <string name="dialog_title_marketing">마케팅 정보 수신 동의</string>
+    <string name="dialog_content_marketing">프로모션, 이벤트혜택,신규 캠페인 정보 등의 마케팅 정보 수신 동의 여부를 설정 합니다</string>
+    <string name="dialog_positive_agree">동의</string>
+    <string name="dialog_positive_Notagree">동의안함</string>
+    <string name="dialog_ExoplayerActivity_dataUse">3G/LTE 등으로 재생 시 데이터 사용료가 발생할 수 있습니다</string>
+    <!--toast-->
+    <string name="toast_commons_fail">오류가 발생했습니다! 다시 시도해주세요</string>
+    <string name="toast_PointStateDetailActivity_success">접수가 취소되었습니다</string>
+    <string name="toast_WithDrawMoneyActivity_success">출금 신청이 성공적으로 접수되었습니다</string>
+    <string name="toast_WithDrawMoneyActivity_moneyCheck">1만원부터 최대 5만원까지입니다</string>
+    <string name="toast_WithDrawMoneyActivity_fail">신청 실패! 다시시도해주세요</string>
+    <string name="toast_AuthEmailSignInActivity_idFail">플럼보드에 가입된 계정이 아닙니다</string>
+    <string name="toast_AuthEmailSignInActivity_pwFail">비밀번호가 일치하지 않습니다</string>
+    <string name="toast_AuthPwSignUpActivity_changePw">비밀번호가 변경되었습니다</string>
+    <string name="toast_CertificationActivity_cantChange">아직 변경할 수 없습니다</string>
+    <string name="toast_MyProfileActivity_uploadFail">업로드 실패 재시도</string>
+    <string name="toast_MyProfileActivity_inputNickName">닉네임을 입력해주세요</string>
+    <string name="toast_MyProfileActivity_checkPermission">접근 권한 설정을 확인해주세요</string>
+    <string name="toast_SettingActivity_pushOn">푸쉬알람을 설정했습니다</string>
+    <string name="toast_SettingActivity_pushOff">푸쉬알람을 해지했습니다</string>
+    <string name="toast_CardMainActivity_videoNotYetDone">동영상 재생이 완료되지 않았습니다</string>
+    <string name="toast_CardMainActivity_answerNotYet">답변 입력이 완료되지 않았습니다</string>
+    <string name="toast_ExoPlayerActivity_cantSkip">동영상 평가를 위해 끝까지 시청해주세요</string>
+
+
+    <string name="toast_ActivityPointManageFragment_preparing">서비스 준비 중입니다</string>
+    <string name="toast_RecommenderFragment_inputDone">입력이 완료되었습니다</string>
+    <string name="toast_MainActivity_appClose">한번더 누르면 앱을 종료 합니다</string>
+    <!--intent-->
+    <string name="intent_sendEmail">이메일 보내기</string>
+    <string name="intent_emailApp">이메일앱 선택</string>
+    <string name="intent_shareDefault">친구에게 공유하기</string>
+
+    <!--in activity-->
+    <string name="WithDrawMoneyActivity_sub1"><![CDATA[- 플럼보드의 <font color=\'#3F51B5\'>1포인트</font>는 <font color=\'#3F51B5\'>1원</font>으로 환산됩니다]]></string>
+    <string name="WithDrawMoneyActivity_sub2"><![CDATA[- 출금 신청은 <font color=\'#3F51B5\'>최소 1만원</font>부터 <font color=\'#3F51B5\'>최대 5만원</font>까지 가능합니다]]></string>
+    <string name="WithDrawMoneyActivity_sub3"><![CDATA[- 입금은 출금 신청일로부터 <font color=\'#3F51B5\'>5일 영업일</font> 이내에 처리됩니다]]></string>
+    <string name="WithDrawMoneyActivity_sub4"><![CDATA[- 입금 시 발생하는 <font color=\'#3F51B5\'>이체수수료가 차감된 금액</font>이 입금됩니다]]></string>
+    <string name="WithDrawMoneyActivity_sub5"><![CDATA[- 입금 시점으로부터 <font color=\'#3F51B5\'>1주일</font> 후 새로운 출금 신청이 가능합니다]]></string>
+    <string name="PlumBoostActivity_sub1"><![CDATA[- 플럼부스트를 통해 캠페인 완료 시 <font color=\'#3F51B5\'>추가 포인트</font>를 적립하세요]]></string>
+    <string name="RecommenderActivity_sub1"><![CDATA[- 타 추천인 코드 입력은 <font color=\'#3F51B5\'>1회</font> 가능합니다 (최대 1%)]]></string>
+    <string name="RecommenderActivity_sub2"><![CDATA[- 내 추천 코드 공유는 <font color=\'#3F51B5\'>총 5회</font> 가능합니다 (최대 2%)]]></string>
+    <string name="StampActivity_sub1"><![CDATA[- 캠페인 완료 시 <font color=\'#3F51B5\'>일일 스탬프를</font> 획득합니다(최대 1일1회)]]></string>
+    <string name="StampActivity_sub2"><![CDATA[- <font color=\'#3F51B5\'>3일 연속 참여시</font> 2% 추가 포인트를 적립합니다.]]></string>
+    <string name="StampActivity_sub3"><![CDATA[- <font color=\'#3F51B5\'>일일 스탬프 획득 실패 시</font> 진행 상황이 <font color=\'#3F51B5\'>초기화</font> 됩니다]]></string>
+    <string name="Certification_sub1"><![CDATA[- 인증 정보를 기반으로 <font color=\'#3F51B5\'>더 많은 캠페인</font>을 불러옵니다]]></string>
+    <string name="Certification_sub2"><![CDATA[- 본인 인증은 최초 등록 후 <font color=\'#3F51B5\'>변경 불가능</font>합니다]]></string>
+    <string name="PointStateActivity_accept">접수</string>
+    <string name="PointStateActivity_done">완료</string>
+    <string name="PointStateActivity_error">오류</string>
+    <string name="PointStateActivity_cancel">취소</string>
+    <string name="pointStateActivity_withdraw">출금</string>
+    <string name="PointStateActivity_toolbarTitle">접수 및 처리 현황</string>
+    <string name="PointStateDetailActivity_toolbarTitle">접수 및 처리현황 상세</string>
+    <string name="WithDrawMoneyActivity_toolbarTitle">출금신청</string>
+    <string name="AuthEmailSignUpActivity_inputId">비밀번호를 재설정하실\n계정명을 입력해주세요</string>
+    <string name="AuthActivity_toolbarTitle">휴대폰 본인 인증</string>
+    <string name="CertificationActivity_certificationDone">인증완료</string>
+    <string name="CertificationActivity_toolbarTitle">인증 정보</string>
+    <string name="FaqActivity_toolbarTitle">자주 묻는 질문(FAQ)</string>
+    <string name="LegalNoticeActivity_toolbarTitle">법적고지</string>
+    <string name="LocationActivity_toolbarTitle">지역</string>
+    <string name="NoticeActivity_toolbarTitle">공지사항</string>
+    <string name="PlumBoostActivity_toolbarTitle">플럼부스트</string>
+    <string name="RecommenderActivity_toolbarTitle">추천 코드</string>
+    <string name="SettingActivity_toolbarTitle">설정</string>
+    <string name="StampActivity_toolbarTitle">캠페인 스탬프</string>
+    <string name="AlarmActivity_toolbarTitle">알림</string>
+    <string name="CampaignDetailActivity_video">동영상 심사</string>
+    <string name="CampaignDetailActivity_survey">설문조사</string>
+    <string name="CampaignDetailActivity_free">자유조사</string>
+    <string name="CampaignDetailActivity_startOn">이어서 시작하기</string>
+    <string name="CampaignDetailActivity_evaluate">평가 완료</string>
+    <string name="CampaignDetailActivity_conditionFail">캠페인 참가 가능 조건과 맞지 않아 \n 캠페인 정보를 불러올 수 없습니다</string>
+    <string name="CardMainActivity_toolbarTitle">캠페인진행</string>
+    <string name="CardMainActivity_vrTitle">시청하신 광고 영상을 심사해주세요</string>
+    <string name="CardMainActivity_ratingTitle">이캠페인에 대한 종합 평가를 남겨주세요</string>
+    <string name="HomeDetailActivity_toolbarTitle">인기 캠페인</string>
+    <string name="toast_MainActivity_doneCampaign">끝난 캠페인 입니다</string>
+    <string name="MainActivity_campaign_toolbarTitle">캠페인</string>
+    <string name="MainActivity_activity_toolbarTitle">내 활동</string>
+    <string name="ProfileMainActivity_ask">문의하기</string>
+    <string name="GuideActivity_toolbarTitle">사용자 가이드</string>
+    <string name="ProfileMainActivity_emailAddress">plumboard@gmail.com</string>
+    <string name="ProfileMainActivity_emailTitle">00문의하기</string>
+    <string name="ProfileMainActivity_emailContent">ex)00이 문제입니다</string>
+    <string name="PreviewActivity_toolbarTitle">미리보기</string>
+
+    <!--in fragment-->
+    <string name="ActivityGraphChildFragment_today">오늘</string>
+    <string name="ActivityGraphChildFragment_add">추가</string>
+    <string name="ActivityGraphChildFragment_total">합계</string>
+    <string name="ActivityGraphChildFragment_cumulative">누적</string>
+    <string name="ActivityGraphChildFragment_use">사용</string>
+    <string name="ActivityGraphChildFragment_now">보유</string>
+    <string name="RecommenderFragment_invalidCode">유효하지 않은 추천인 코드입니다</string>
+    <string name="fragment_location_dialog_title">선택한 지역을 확인해주세요</string>
+    <string name="fragment_account_freeze_title">계정 비활성화</string>
+    <string name="AccountFreezeFragment_contentTv"><![CDATA[[계정 비활성화 안내]<br><br>- 계정 비활성화 신청 시점부터 7일간 유예기간이 시작됩니다<br>- 유예기간 중 해당 계정으로 로그인 시 계정을 다시 활성화 할 수 있습니다<br>- 유예기간이 지나면 계정이 영구적으로 비활성화되며, 해당 계정의 포인트 정보를 포함한 <font color=\'#3F51B5\'>모든 파트너 및 심사위원 정보가 삭제</font>되고 복구 불가능합니다]]></string>
+
+    <string name="dialog_function_error">요청을 완료할 수 없습니다. 이문제가 지속된다면 고객센터로 문의 부탁드립니다</string>
+
+    <string name="test">아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아</string>
+
+</resources>

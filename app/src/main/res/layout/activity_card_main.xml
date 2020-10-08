@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_card_main_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".mvvm.view.activity.CardMainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCardBackgroundColor">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/activity_card_main_lotti"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_indicator_white" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_card_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCardBackgroundColor"
+            android:theme="@style/CardMainToolbar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/activity_card_main_viewpager"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1" />
+
+        <com.imhc2.plumboard.commons.util.CustomViewpager
+            android:id="@+id/activity_card_main_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/activity_card_main_fl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_card_main_toolbar"
+            app:layout_constraintVertical_weight="1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/activity_card_main_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorPlumBoardSub"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/activity_card_main_fl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right_color" />
+
+        <FrameLayout
+            android:id="@+id/activity_card_main_fl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_card_main_viewpager">
+
+            <ProgressBar
+                android:id="@+id/activity_card_main_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_gravity="bottom"
+                android:progressDrawable="@drawable/drawable_cardmain_progress" />
+
+            <ImageButton
+                android:id="@+id/activity_card_main_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="24dp"
+                android:background="@color/transparent"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/activity_card_main_page_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="24dp"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorCardBackgroundColor" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
+             

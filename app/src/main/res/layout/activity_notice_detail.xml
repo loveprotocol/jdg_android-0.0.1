@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvvm.view.activity.mypage.NoticeDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_notice_detail_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_notice_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarStyle" />
+
+        <TextView
+            android:id="@+id/activity_notice_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="qdqdqdqdqdqdqdwdwdwdwdwdwdwdwdwdwdwdwdwdwdwdwdwdwdwdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdㅁㅇ"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="18sp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/activity_notice_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="유후룰루랄라유후후"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_notice_detail_appBarLayout"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

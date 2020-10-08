@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:fillColor="@color/colorPlumBoardSub"
+        android:pathData="M13,12l6.8,-6.8c0.3,-0.3 0.3,-0.7 0,-1c-0.3,-0.3 -0.7,-0.3 -1,0L12,11L5.2,4.2c-0.3,-0.3 -0.7,-0.3 -1,0s-0.3,0.7 0,1L11,12l-6.8,6.8c-0.3,0.3 -0.3,0.7 0,1C4.3,19.9 4.5,20 4.7,20s0.4,-0.1 0.5,-0.2L12,13l6.8,6.8c0.1,0.1 0.3,0.2 0.5,0.2c0.2,0 0.4,-0.1 0.5,-0.2c0.3,-0.3 0.3,-0.7 0,-1L13,12z"/>
+</vector>

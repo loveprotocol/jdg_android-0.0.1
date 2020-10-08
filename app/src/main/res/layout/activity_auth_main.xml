@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPlumBoard">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_auth_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:theme="@style/ToolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/activity_auth_mainBottomLl"
+        app:layout_constraintTop_toBottomOf="@+id/activity_auth_main_toolbar"
+        app:layout_constraintVertical_bias="0.48">
+
+        <ImageView
+            android:id="@+id/activity_auth_main_logo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/activity_auth_main_welcomeTv"
+            app:srcCompat="@drawable/ic_plum_logo_white" />
+
+        <ImageView
+            android:id="@+id/activity_auth_main_plumboardImg"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_auth_main_logo_img"
+            app:layout_constraintStart_toEndOf="@+id/activity_auth_main_logo_img"
+            app:layout_constraintTop_toTopOf="@+id/activity_auth_main_logo_img"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:srcCompat="@drawable/img_plumboard_text_white" />
+
+        <TextView
+            android:id="@+id/activity_auth_main_welcomeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="20dp"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/activity_auth_main_title"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_auth_main_googleBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_auth_main_plumboardImg" />
+
+        <Button
+            android:id="@+id/activity_auth_main_googleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:drawableStart="@drawable/drawable_ic_google_white"
+            android:drawablePadding="-30dp"
+            android:paddingStart="12dp"
+            android:text="@string/activity_auth_main_googleBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_auth_main_emailSignInBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_auth_main_welcomeTv" />
+
+        <Button
+            android:id="@+id/activity_auth_main_emailSignInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:drawableStart="@drawable/drawable_ic_email_white"
+            android:drawablePadding="-30dp"
+            android:paddingStart="14dp"
+            android:text="@string/activity_auth_main_emailBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_auth_main_googleBtn" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorPlumBoardSub"
+            app:layout_constraintBottom_toTopOf="@+id/activity_auth_main_emailSignUpBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_auth_main_emailSignInBtn" />
+
+        <Button
+            android:id="@+id/activity_auth_main_emailSignUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/drawable_btn_outline"
+            android:text="@string/activity_auth_main_emailSignUpBtn"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_auth_main_subTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/activity_auth_main_subTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/activity_auth_main_legalTv"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_auth_main_emailSignUpBtn" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_auth_mainBottomLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/activity_auth_mainAuthTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_auth_main_lostIdTv"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/colorPlumBoardSub" />
+
+        <TextView
+            android:id="@+id/activity_auth_mainLegalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_auth_main_showLegalTv"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/colorPlumBoardSub" />
+
+        <TextView
+            android:id="@+id/activity_auth_mainInfoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_auth_main_privacyPolicyTv"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

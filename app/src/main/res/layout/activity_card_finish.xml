@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvvm.view.activity.CardFinishActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/activity_card_finish_lotti"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/coinfall" />
+
+    <LinearLayout
+        android:id="@+id/activity_card_finish_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_lotti">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_card_finish_titleTv"
+            android:textColor="@color/colorPlumBoard"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_card_finish_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="555 포인트 적립"
+            android:textColor="@color/colorPlumBoard"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/activity_card_finish_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="#c9c9c9"
+        app:layout_constraintTop_toBottomOf="@id/activity_card_finish_ll" />
+
+    <TextView
+        android:id="@+id/activity_card_finish_campaign_doneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/activity_card_finish_campaignPointTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_line1" />
+
+    <TextView
+        android:id="@+id/activity_card_finish_campaign_boostText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:text="플럼부스트(0%)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_campaign_doneText" />
+
+    <TextView
+        android:id="@+id/activity_card_finish_campaign_nowPointText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/activity_card_finish_myPointTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_campaign_boostText" />
+
+    <TextView
+        android:id="@+id/activity_card_finish_campaign_doneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="48dp"
+        android:text="500"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_line1" />
+
+    <TextView
+        android:id="@+id/activity_card_finish_campaign_boostTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="48dp"
+        android:text="20"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_campaign_doneTv" />
+
+    <TextView
+        android:id="@+id/activity_card_finish_campaign_nowPointTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="48dp"
+        android:text="2,033"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_campaign_boostTv" />
+
+    <View
+        android:id="@+id/activity_card_finish_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#c9c9c9"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_campaign_nowPointText" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_card_finish_floatingBtn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_card_finish_line2"
+        app:srcCompat="@drawable/ic_check" />
+
+</android.support.constraint.ConstraintLayout>

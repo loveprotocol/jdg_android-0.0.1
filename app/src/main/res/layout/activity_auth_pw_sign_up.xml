@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPlumBoard">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/pwSignUpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:theme="@style/ToolbarStyle"
+            app:layout_constraintBottom_toTopOf="@+id/pwSignUpTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/pwSignUpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:letterSpacing="0.02"
+            android:text="@string/activity_auth_pw_sign_up_title"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/pwSignUpSubTitle"
+            app:layout_constraintStart_toStartOf="@+id/pwSignUpToolbar"
+            app:layout_constraintTop_toBottomOf="@+id/pwSignUpToolbar"
+            app:layout_constraintVertical_bias="0.144" />
+
+        <TextView
+            android:id="@+id/pwSignUpSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:letterSpacing="0.02"
+            android:text="@string/activity_auth_pw_sign_up_subTitle"
+            android:visibility="invisible"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/pwSignUpPwTv"
+            app:layout_constraintStart_toStartOf="@+id/pwSignUpTitle"
+            app:layout_constraintTop_toBottomOf="@+id/pwSignUpTitle" />
+
+        <TextView
+            android:id="@+id/pwSignUpPwTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:letterSpacing="0.02"
+            android:text="@string/activity_auth_pw_sign_up_pwTv"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/pwSignUpPwTIL"
+            app:layout_constraintStart_toStartOf="@+id/pwSignUpSubTitle"
+            app:layout_constraintTop_toBottomOf="@+id/pwSignUpSubTitle" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pwSignUpPwTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="14dp"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toTopOf="@+id/pwSignUpPwCheckTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pwSignUpPwTv"
+            app:layout_constraintTop_toBottomOf="@+id/pwSignUpPwTv">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pwSignUpPwEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPlumBoardSub"
+                android:digits="@string/pw_digits"
+                android:hint="@string/activity_auth_pw_sign_up_pwHintEt"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textColorHint="#42FFFFFF"
+                android:theme="@style/AuthEtStyle" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/pwSignUpPwCheckTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.02"
+            android:text="@string/activity_auth_pw_sign_up_pwCheckTv"
+            android:textColor="@color/colorPlumBoardSub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/pwSignUpPwCheckTIL"
+            app:layout_constraintStart_toStartOf="@+id/pwSignUpPwTIL"
+            app:layout_constraintTop_toBottomOf="@+id/pwSignUpPwTIL" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pwSignUpPwCheckTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="32dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pwSignUpPwCheckTv"
+            app:layout_constraintTop_toBottomOf="@+id/pwSignUpPwCheckTv">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pwSignUpPwCheckEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPlumBoardSub"
+                android:digits="@string/pw_digits"
+                android:hint="@string/activity_auth_pw_sign_up_pwCheckHintEt"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColor="@color/colorPlumBoardSub"
+                android:textColorHint="#42FFFFFF"
+                android:theme="@style/AuthEtStyle" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="@color/colorPlumBoardSub"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_arrow_right_color" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
